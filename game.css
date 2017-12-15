@@ -4,7 +4,18 @@
 
 body {
 	background-color: #FFDCE1;
+	background-image: url("https://www.imgbase.info/images/safe-wallpapers/digital_art/1_miscellaneous_digital_art/24625_1_miscellaneous_digital_art_trippy_psychedelic.jpg");
 
+}
+
+@font-face {
+	font-family: 'Indie Flower', cursive;
+	src: url(https://fonts.googleapis.com/css?family=Indie+Flower);
+}
+
+head {
+	font-family: 'Indie Flower', cursive;
+	vertical-align: top;
 }
 
 .main-box {
@@ -41,8 +52,10 @@ body {
 
 .occupied1 {
 	background-color: gray;
+	background-image: url("https://images.8tracks.com/cover/i/008/945/013/Valsorda-4241.jpg?rect=0,0,1536,1536&q=98&fm=jpg&fit=max&w=640&h=640");
 }
 
 .occupied2 {
 	background-color: skyblue;
+	background-image: url("https://i.pinimg.com/736x/da/8d/38/da8d38f2746bffe68038514c8221fbd2--psychedelic-art-sacred-geometry.jpg");
 }
