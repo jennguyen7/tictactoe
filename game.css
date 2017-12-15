@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFDCE1;
+
+}
+
+.main-box {
+	display: inline-block;
+	height: 600px;
+	width: 600px;
+}
+
+.square {
+	display: inline-block;
+	height: 200px;
+	width: calc(200px - 4px);
+	border: 2px solid orange;
+	background-color: #B6C1FF;
+}
+
+
+.display {
+	display: inline-block;
+	height: 500px;
+	width: 500px;
+	border: 2px solid gray;
+	background-color: linen;
+	vertical-align: top;
+}
+
+.resetButt {
+	display: inline-block;
+	border: 2px solid blue;
+	height: 100px;
+	width: 100px;
+	background-color: linen;
+}
+
+.occupied1 {
+	background-color: gray;
+}
+
+.occupied2 {
+	background-color: skyblue;
+}
