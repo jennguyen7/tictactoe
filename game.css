@@ -52,11 +52,13 @@ body {
 }
 
 .player1Img {
-	background: url("images/image01.jpg") no-repeat center;
+	background: url("images/image01.jpg");
+	background-size:cover; 
 }
 
 .player2Img {
-	background: url("images/image02.jpg") no-repeat center; 
+	background: url("images/image02.jpg");
+	background-size:cover;  
 }
 
 .pIwD1, .pIwD2 {
@@ -76,19 +78,21 @@ body {
 }
 
 .player1-display {
-	background: url("images/image01.jpg") no-repeat center;
+	background: url("images/image01.jpg");
 	display: center;
 	margin: 0 auto;
 	width: 200px;
 	height: 200px;
+	background-size:cover; 
 }
 
 .player2-display {
-	background: url("images/image02.jpg") no-repeat center; 
+	background: url("images/image02.jpg"); 
 	display: center;
 	margin: 0 auto;
 	width: 200px;
 	height: 200px;
+	background-size:cover; 
 }
 
 
@@ -105,11 +109,13 @@ body {
 }
 
 .occupied1 {
-	background: url("images/image01.jpg") no-repeat center;
+	background: url("images/image01.jpg");
+	background-size:cover; 
 
 }
 
 .occupied2 {
-	background: url("images/image02.jpg") no-repeat center; 
+	background: url("images/image02.jpg");
+	background-size:cover;  
 }
 
