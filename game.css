@@ -4,18 +4,21 @@
 
 body {
 	background-color: #FFDCE1;
-	background-image: url("https://www.imgbase.info/images/safe-wallpapers/digital_art/1_miscellaneous_digital_art/24625_1_miscellaneous_digital_art_trippy_psychedelic.jpg");
+	background-image: url(images/background03.jpg);
 
 }
 
-@font-face {
-	font-family: 'Indie Flower', cursive;
-	src: url(https://fonts.googleapis.com/css?family=Indie+Flower);
+.bodyBox {
+	text-align: center;
 }
 
-head {
-	font-family: 'Indie Flower', cursive;
-	vertical-align: top;
+.heading {
+	text-align: center;
+	font-family: "verdana", "sans-serif";
+	font-weight: 900;
+	font-size: 100px; 
+	outline-color: black;
+	color: white;
 }
 
 .main-box {
@@ -28,18 +31,69 @@ head {
 	display: inline-block;
 	height: 200px;
 	width: calc(200px - 4px);
-	border: 2px solid orange;
-	background-color: #B6C1FF;
+	border: none;
+	background-color: #D3D3D3;
 }
 
 
-.display {
+.main-display {
 	display: inline-block;
 	height: 500px;
 	width: 500px;
-	border: 2px solid gray;
+	border: none;
 	background-color: linen;
 	vertical-align: top;
+}
+
+.player1Img, .player2Img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+.player1Img {
+	background: url("images/image01.jpg") no-repeat center;
+}
+
+.player2Img {
+	background: url("images/image02.jpg") no-repeat center; 
+}
+
+.pIwD1, .pIwD2 {
+	display: inline-block;
+	text-align: cetner;
+	padding: 0 14%;
+}
+
+
+.childDisplay {
+	display: center;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #D3D3D3;
+
+}
+
+.player1-display {
+	background: url("images/image01.jpg") no-repeat center;
+	display: center;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+
+.player2-display {
+	background: url("images/image02.jpg") no-repeat center; 
+	display: center;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+
+
+.pT {
+	text-align: center;
 }
 
 .resetButt {
@@ -51,11 +105,11 @@ head {
 }
 
 .occupied1 {
-	background-color: gray;
-	background-image: url("https://images.8tracks.com/cover/i/008/945/013/Valsorda-4241.jpg?rect=0,0,1536,1536&q=98&fm=jpg&fit=max&w=640&h=640");
+	background: url("images/image01.jpg") no-repeat center;
+
 }
 
 .occupied2 {
-	background-color: skyblue;
-	background-image: url("https://i.pinimg.com/736x/da/8d/38/da8d38f2746bffe68038514c8221fbd2--psychedelic-art-sacred-geometry.jpg");
+	background: url("images/image02.jpg") no-repeat center; 
 }
+

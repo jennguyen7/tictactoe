@@ -1,4 +1,4 @@
-/*
+  /*
  Project #1: The Game
 
 Overview
@@ -133,7 +133,7 @@ var p2WinConditions = [
 ];
 
 
-
+var comboSize=3;
 var currentPlayer = 1; //using numbers will be easier to track
 var p1Arr = [];
 var p2Arr = [];
@@ -141,7 +141,10 @@ var p2Arr = [];
 var play = function (event) {
 
 	if (currentPlayer % 2 !=0 && currentPlayer <= 9){ 
+		document.querySelector(".childDisplay").classList.add("player1-display");
+		document.querySelector(".childDisplay").classList.remove("player2-display");
 		event.target.classList.add("occupied1");
+		//display player turn in display box
 		//retrieve the id of the box clicked
 		//compare using forEach
 		//push into resultB array
@@ -151,6 +154,8 @@ var play = function (event) {
 		p1Arr.push(p1Id);
 		console.log(p1Arr);
 	} else if (currentPlayer <= 9) {
+		document.querySelector(".childDisplay").classList.remove("player1-display");
+		document.querySelector(".childDisplay").classList.add("player2-display");
 		event.target.classList.add("occupied2");
 		var p2Id = event.target.id;
 		console.log(p2Id);
@@ -159,11 +164,11 @@ var play = function (event) {
 	} 
 	currentPlayer ++ ;//you are increasing the count each time to enable a type of loop
 
-	if (p1Arr.length >= 3) {
+	if (p1Arr.length >= comboSize) {
 		var winningCombinationPlayer1TheWinner = detWinner (p1WinConditions, p1Arr);
 		console.log("winningCombinationPlayer1TheWinner:"+winningCombinationPlayer1TheWinner);
 	}
-	if (p2Arr.length >= 3) {
+	if (p2Arr.length >= comboSize) {
 		var winningCombinationPlayer2TheWinner = detWinner (p2WinConditions, p2Arr);
 		console.log("winningCombinationPlayer2TheWinner:"+winningCombinationPlayer2TheWinner);
 	}
@@ -172,14 +177,12 @@ var play = function (event) {
 var detWinner = function (winConditions, pArr) {
 	var winningCombination;
 	for (let win of winConditions) {
-		var winCheck = true;
+		var winCount = 0;
 		for (let p1x of pArr) {
-			if(win.indexOf(p1x) < 0) {
-				winCheck = false;
-				break;
-			}
+			if(win.indexOf(p1x) >= 0)
+				winCount++;
 		}
-		if (winCheck === true) {
+		if (winCount === comboSize) {
 			winningCombination = win;
 			break;
 		}
@@ -188,7 +191,8 @@ var detWinner = function (winConditions, pArr) {
 }
 
 
-
+//do a check at the end, need to iterate through all of the items
+//maintain a counter of successful hits and dont break
 
 //detWinner (p2WinConditions)
 
